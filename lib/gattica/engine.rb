@@ -158,7 +158,7 @@ module Gattica
         end
       end
 
-      return data
+      return response.body
     end
 
 
