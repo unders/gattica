@@ -29,7 +29,7 @@ module Gattica
           raise GatticaError::UnknownAnalyticsError, response.body + " (status code: #{response.code})"
         end
       end
-      @tokens = parse_tokens(data)
+      @tokens = parse_tokens(response.body)
     end
   
   
